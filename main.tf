@@ -22,8 +22,8 @@ resource "aws_instance" "karthik-instance-1" {
     inline = [
       "sudo amazon-linux-extras install ansible2 -y",
       "sudo yum install git -y",
-      "git clone {url} /tmp/git-dir-clone",
-      "ansible-playbook /tmp/git-dir-clone/configurations.yaml"
+      "git clone https://github.com/rao1995/pg-devops-c1-a1-v1.git /tmp/git-dir-clone",
+      "ansible-playbook /tmp/git-dir-clone/ansible/test-1.yaml"
     ]
   }
 }
