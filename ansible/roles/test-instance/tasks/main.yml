@@ -1,1 +1,6 @@
-
+  - name: Install Java
+    yum: name=java-11-openjdk-devel
+  - name: Install jenkins
+    yum: name=jenkins
+  - name: Install Python
+    yum name=python
