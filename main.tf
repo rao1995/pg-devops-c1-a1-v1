@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "karthik-instance-1" {
-  ami           = "${var.ami-mine}"
+  ami           = "ami-06ca3ca175f37dd66"
   instance_type = "t3.micro"
   key_name      = "karthik-key"
 
