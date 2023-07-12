@@ -11,16 +11,15 @@ resource "aws_instance" "karthik-instance-1" {
     Name = "ANSIBLE"
   }
 
-  
-
-  provisioner "remote-exec" {
   connection {
     type        = "ssh"
     user        = "ec2-user"
-    private_key = "${file("karthik-key.pem")}"
+    private_key = "${file("/root/pg-devops-c1-a1-v1/karthik-key.pem")}"
     host        = "${self.public_ip}"
+    timeout     = "2m"
   }
 
+  provisioner "remote-exec" {  
     inline = [
       "sudo amazon-linux-extras install ansible2 -y",
       "sudo yum install git -y",
