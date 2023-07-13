@@ -3,4 +3,4 @@
   - name: Install jenkins
     yum: name=jenkins
   - name: Install Python
-    yum name=python
+    yum: name=python
