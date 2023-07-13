@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "karthik-instance-1" {
-  ami           = "ami-06ca3ca175f37dd66"
+  ami           = "ami-04823729c75214919"
   instance_type = "t3.medium"
   key_name      = "karthik-test-1"
 
