@@ -4,8 +4,8 @@ provider "aws" {
 
 resource "aws_instance" "karthik-instance-1" {
   ami           = "ami-06ca3ca175f37dd66"
-  instance_type = "t3.micro"
-  key_name      = "karthik-key"
+  instance_type = "t3.medium"
+  key_name      = "karthik-test-1"
 
   tags = {
     Name = "ANSIBLE"
