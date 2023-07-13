@@ -14,7 +14,7 @@ resource "aws_instance" "karthik-instance-1" {
   connection {
     type        = "ssh"
     user        = "ec2-user"
-    private_key = "${file("/root/pg-devops-c1-a1-v1/karthik-key.pem")}"
+    private_key = "${file("/tmp/kraov-test-1.pem")}"
     host        = "${self.public_ip}"
     timeout     = "2m"
   }
